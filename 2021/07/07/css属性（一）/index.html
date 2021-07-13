@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="1、浮动">
+  <meta name="description" content="1、浮动 浮动最初是为了让内容环绕在浮动元素周围，后来利用它的特点逐渐将其用于布局。浮动让布局多样化，但它会脱离文档流，造成一些副作用（如高度坍塌） 2、浮动范围 1）包含块边界：元素浮动不能超出其包含块的内容区域，浮动元素的包含块是离它最近的块级祖先元素。 浮动元素在相同的包含块中时，当总宽度超出会自动换行 2）限制向上浮动：左浮动的元素会向左边界和顶部对齐，有浮动的元素会向有边界和顶部对齐。当">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css属性(一）">
 <meta property="og:url" content="http://oliverwit.github.io/2021/07/07/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="OLIVERWIT的个人博客">
-<meta property="og:description" content="1、浮动">
+<meta property="og:description" content="1、浮动 浮动最初是为了让内容环绕在浮动元素周围，后来利用它的特点逐渐将其用于布局。浮动让布局多样化，但它会脱离文档流，造成一些副作用（如高度坍塌） 2、浮动范围 1）包含块边界：元素浮动不能超出其包含块的内容区域，浮动元素的包含块是离它最近的块级祖先元素。 浮动元素在相同的包含块中时，当总宽度超出会自动换行 2）限制向上浮动：左浮动的元素会向左边界和顶部对齐，有浮动的元素会向有边界和顶部对齐。当">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-07T15:06:56.000Z">
-<meta property="article:modified_time" content="2021-07-07T15:10:44.248Z">
+<meta property="article:modified_time" content="2021-07-13T15:43:59.004Z">
 <meta property="article:author" content="OLIVERWIT">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -220,7 +220,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">3字</span>
+      <span class="post-count">754字</span>
     </span>
   </span>
 
@@ -229,7 +229,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -241,6 +241,36 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>1、浮动</p>
+<p>浮动最初是为了让内容环绕在浮动元素周围，后来利用它的特点逐渐将其用于布局。浮动让布局多样化，但它会脱离文档流，造成一些副作用（如高度坍塌）</p>
+<p>2、浮动范围</p>
+<p>1）包含块边界：元素浮动不能超出其包含块的内容区域，浮动元素的包含块是离它最近的块级祖先元素。</p>
+<p>浮动元素在相同的包含块中时，当总宽度超出会自动换行</p>
+<p>2）限制向上浮动：左浮动的元素会向左边界和顶部对齐，有浮动的元素会向有边界和顶部对齐。当浮动元素之前有内容的时候，会阻止其向上浮动。</p>
+<span id="more"></span>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">       浮动元素之前的内容</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;float:left&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>3）浮动元素的尺寸：当浮动元素的尺寸超出包含块的尺寸，并且包含块没有设置超出部分影藏（overflow :hidden），浮动元素有部分在包含块之外。</p>
+<p>3、创建BFC</p>
+<p>float 属性部位none的元素可以创建BFC</p>
+<p>4、清除浮动</p>
+<p>浮动的一大缺陷就是让包含块的高度塌陷，另一大缺陷是影响兄弟元素的位置或样式</p>
+<p>1）用BFC包裹：给包含块设置overflow属性，它的值只要不是visible就能创建BFC，通常会设为hidden</p>
+<p>2）clear属性：clear属性会增加元素的上外边距，使它能够出现在浮动元素的下面，所以可以在浮动元素后面设置这个属性</p>
+<p>3）after伪元素</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">section</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">    <span class="attribute">visibility</span>:hidden;</span><br><span class="line">    <span class="attribute">display</span>:block;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5、定位</p>
+<p>定位常用于布局。定位position常见的关键字static，relative,absolute,fixed。static是所有元素的默认值，存在于正常流中，不能使用偏移属性（top,bottom,left,right)</p>
+<p>1）relative</p>
+<p>相对定位和静态定位一样，不会脱离正常流，也不会改变元素盒类型，行内元素不会变成块级元素。相对定位会根据原先的位置偏移，并且原先所占的位置还会保留。</p>
+<p>2）absolute</p>
+<p>绝对定位会脱离正常流，并且会将元素变成块级元素。元素被设为绝对定位后，其原先所占的空间会被删除，并且它会相对于包含块偏移，它的包含块就是离它最近的position属性不为static的最先元素的内容区域。</p>
+<p>3）fixed</p>
+<p>固定定位的包含块是当前视口。</p>
+<p>6、偏移属性 top/bottom/left/right  top设置的是元素的上外边距（margin-top)到参照物（包含块或原先位置）顶端的距离</p>
+<p>7、z-index</p>
+<p>z-index 用于改变元素的层叠顺序，属性值是一个无单位的数字或auto（auto相当于0），z-index属性值越大越不容易被覆盖。</p>
 
     
 
@@ -379,6 +409,15 @@
 
 
 <nav id="article-nav">
+  
+    <a href="/2021/07/13/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          css属性（二）
+        
+      </div>
+    </a>
   
   
     <a href="/2021/07/07/css%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
@@ -525,10 +564,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">hh</a>
               </li>
             
             <div class="clearfix"></div>

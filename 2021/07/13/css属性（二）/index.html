@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://oliverwit.github.io">
-  <title>html元素 | OLIVERWIT的个人博客</title>
+  <title>css属性（二） | OLIVERWIT的个人博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="1、什么是shadow DOM？ shadow dom是浏览器的一种功能，能够自动添加子元素，例如audio，在网页中能使用进度条、音量控制等功能，这些相关子元素由浏览器自动生成。 2、元素属性href和src的区别？ 两者的功能不同。href能建立一条通道，将当前文档和定义的资源连接起来。 src将定义的资源嵌入到当前文档中。">
+  <meta name="description" content="1、边框 元素的边框位于padding和margin之间，每条边框涉及宽度、外观、颜色。每条边框可分为4个部分，border-top,border-bottom,border-left,border-right 1）外观：border-style 有dotted、solid、dashed等等属性 2）宽度：border-width 有thin(1px)、medium(3px)、thick(5px)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html元素">
-<meta property="og:url" content="http://oliverwit.github.io/2021/07/07/html%E5%85%83%E7%B4%A0/index.html">
+<meta property="og:title" content="css属性（二）">
+<meta property="og:url" content="http://oliverwit.github.io/2021/07/13/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
 <meta property="og:site_name" content="OLIVERWIT的个人博客">
-<meta property="og:description" content="1、什么是shadow DOM？ shadow dom是浏览器的一种功能，能够自动添加子元素，例如audio，在网页中能使用进度条、音量控制等功能，这些相关子元素由浏览器自动生成。 2、元素属性href和src的区别？ 两者的功能不同。href能建立一条通道，将当前文档和定义的资源连接起来。 src将定义的资源嵌入到当前文档中。">
+<meta property="og:description" content="1、边框 元素的边框位于padding和margin之间，每条边框涉及宽度、外观、颜色。每条边框可分为4个部分，border-top,border-bottom,border-left,border-right 1）外观：border-style 有dotted、solid、dashed等等属性 2）宽度：border-width 有thin(1px)、medium(3px)、thick(5px)">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-07-07T11:27:45.000Z">
-<meta property="article:modified_time" content="2021-07-07T12:30:29.815Z">
+<meta property="article:published_time" content="2021-07-13T15:45:09.000Z">
+<meta property="article:modified_time" content="2021-07-13T16:18:52.505Z">
 <meta property="article:author" content="OLIVERWIT">
-<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="OLIVERWIT的个人博客" type="application/atom+xml">
@@ -192,22 +192,22 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-html元素" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css属性（二）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      html元素
+      css属性（二）
     </h1>
   
 
 
   
   
-<a href="/2021/07/07/html%E5%85%83%E7%B4%A0/" class="archive-article-date">
-        <time datetime="2021-07-07T11:27:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-07</time>
+<a href="/2021/07/13/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
+        <time datetime="2021-07-13T15:45:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-13</time>
 </a>
 
   
@@ -220,7 +220,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">600字</span>
+      <span class="post-count">334字</span>
     </span>
   </span>
 
@@ -229,7 +229,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">1分</span>
     </span>
   </span>
 </div>
@@ -240,64 +240,37 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>1、什么是shadow DOM？</p>
-<p>shadow dom是浏览器的一种功能，能够自动添加子元素，例如audio，在网页中能使用进度条、音量控制等功能，这些相关子元素由浏览器自动生成。</p>
-<p>2、元素属性href和src的区别？</p>
-<p>两者的功能不同。href能建立一条通道，将当前文档和定义的资源连接起来。</p>
-<p>src将定义的资源嵌入到当前文档中。</p>
+    <p>1、边框</p>
+<p>元素的边框位于padding和margin之间，每条边框涉及宽度、外观、颜色。每条边框可分为4个部分，border-top,border-bottom,border-left,border-right</p>
+<p>1）外观：border-style</p>
+<p>有dotted、solid、dashed等等属性</p>
+<p>2）宽度：border-width</p>
+<p>有thin(1px)、medium(3px)、thick(5px)</p>
+<p>3)颜色</p>
+<p>接下来将其他3种颜色设置为透明，留下一种颜色，就能得到三角形</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">50px</span> solid transparent;</span><br><span class="line">    <span class="attribute">border-top-color</span>:gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
 
-<p>3、style 元素属性</p>
-<p>1）type: 指定MIME类型</p>
-<p>2）media:指定媒体类型，默认为all</p>
-<p>3）title:为样式表命名，可用于设置首选样式表</p>
-<p>4）scoped:定义样式的应用范围</p>
-<p>4、优先级：内联样式&gt;内嵌样式&gt;外部样式    就近原则</p>
-<p>5、defer和async</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>作用</th>
-<th>执行顺序</th>
-<th>作用内联脚本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>defer</td>
-<td>延迟脚本执行，直到文档解析完成</td>
-<td>有序</td>
-<td>否</td>
-</tr>
-<tr>
-<td>async</td>
-<td>尽快执行脚本，不会阻塞文档解析</td>
-<td>无序</td>
-<td>否</td>
-</tr>
-</tbody></table>
-<p>6、特殊协议</p>
-<p>“javascript:”伪协议只能用于几个特定的属性，a标签的href、form的action属性等</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:alert(&#x27;test&#x27;)&quot;</span>点击&lt;/<span class="attr">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>2、圆角</p>
+<p>border-radius</p>
+<p>3、阴影</p>
+<p>box-shadow</p>
+<p>可向边框添加一个或多个阴影，并且可以设置6个属性值，分别是水平偏移值、垂直偏移值、模糊距离、阴影宽度、阴影颜色、阴影类型。</p>
+<p>4、outline </p>
+<p>用于绘制元素的轮廓，与border一样有三个方面。</p>
+<p>5、文本属性</p>
+<p>1）overflow:处理块级元素溢出的内容，指元素的尺寸太小，内容太多时，超出了元素内容区域的那部分内容。</p>
+<p>visible：默认值，完全显示溢出内容</p>
+<p>hidden：最常用的一个属性值，溢出的内容会被直接剪裁</p>
+<p>scroll：显示水平和垂直方向上的滚动条</p>
+<p>auto：让浏览器根据实际情况处理溢出的内容</p>
+<p>2）text-decoration</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">text-decoration</span>:none</span><br></pre></td></tr></table></figure>
 
-<p>7、meta元素</p>
-<p>每个meta元素只能有一个用于，如果想要多种用途，需要添加多个meta</p>
-<p>meta 元素有4个属性 charset、name、http-equiv、content</p>
-<p>1）charset h5新增属性，表示html文档所采用的的字符编码</p>
-<p>2）name属性表示文档级元数据，每个name属性值对应特定的content属性值，让计算机更好的理解当前文档</p>
-<p>3）http-equiv属性提供了一些程序指令，用于模拟http首部，每个http-equiv属性值同样对应特定的content属性值，http-equi属性有3个关键字，content-type、default-style、refresh</p>
-<p>8、input</p>
-<p>1）hidden:隐藏元素，可存储不让用户看见和编辑的数据</p>
-<p>2）text，单行文本</p>
-<p>3）tel 电话号码格式的文本 不会强制执行特定的验证机制</p>
-<p>4）password 遮盖单行文本</p>
-<p>5）email </p>
-<p>6）search</p>
-<p>7）url</p>
-<p>9、web存储</p>
-<p>web存储分为本地存储（local storage)和会话存储(sesseion storage)</p>
-<p>local storage 永远不会过期，即使浏览器关闭，还会存在，同源的本地存储可以共享</p>
-<p>session storage 只能存在于会话期间，当当关闭浏览器或页面时，会话存储中的数据将自动清除</p>
+<p>  消除a标签的下划线</p>
+<p>3）white-space </p>
+<p>4）文本换行</p>
 
     
 
@@ -344,7 +317,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://oliverwit.github.io/2021/07/07/html元素/" title="html元素" target="_blank">http://oliverwit.github.io/2021/07/07/html元素/</a>
+          <a href="http://oliverwit.github.io/2021/07/13/css属性（二）/" title="css属性（二）" target="_blank">http://oliverwit.github.io/2021/07/13/css属性（二）/</a>
         </li>
         
         <li>
@@ -366,7 +339,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
         		</li>
       		
 		</ul>
@@ -422,7 +395,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://oliverwit.github.io/2021/07/07/html%E5%85%83%E7%B4%A0/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://oliverwit.github.io/2021/07/13/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%BA%8C%EF%BC%89/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -437,18 +410,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/07/07/css%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/07/14/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%B8%89%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          css基础（一）
+          css属性（三）
         
       </div>
     </a>
   
   
-    <a href="/2021/06/28/css%E7%9F%A5%E8%AF%86%E5%B7%A9%E5%9B%BA/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">css知识巩固</div>
+    <a href="/2021/07/07/css%E5%B1%9E%E6%80%A7%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css属性(一）</div>
       <i class="icon-circle-right"></i>
     </a>
   
