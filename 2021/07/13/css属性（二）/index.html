@@ -461,28 +461,31 @@
 
 
 
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
+  
+  <script>
+  <!-- id: "css属性（二）" -->
+  var giteement = new Giteement({
+    id: '20210713234509',
+    owner: 'oliverwit',
+    repo: 'remarks',
+    backcall_uri: 'https://oliverwit.github.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '74ad8e1a2d6eb847c129bf5492d84ebebfb25ba5c8eb28fb06582c9445694126',
+      client_secret: 'e278a9d2022e25a0b2002101759f02501641b02dba04bdcb6a018cee3b2e0a39'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
 
-  
-  <div id="gitment-ctn"></div>
-  
-      <!-- 中文 -->
-      <link rel="stylesheet" href="/lib/gitment.css">
-      <script src="/lib/gitment.js"></script>
-      
-        <script>
-          var gitment = new Gitment({
-            id: "20210713234509",
-            owner: 'OliverWit',
-            repo: 'oliverwit.github.io',
-            oauth: {
-              client_id: '1de24b2f3a4a0aa2ef62',
-              client_secret: 'f136b5b04a2bcf81a44a91b06815cbe73eb60698',
-            },
-          })
-          gitment.render('gitment-ctn')
-        </script>
-        
-  
+
+
+
+
 
 
 
